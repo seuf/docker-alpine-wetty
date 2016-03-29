@@ -1,0 +1,13 @@
+version: '2'  
+
+services:
+  wetty:
+    image: alpine/wetty
+    hostname: wetty
+    container_name: wetty
+    expose:
+      - "3000"
+    ports:
+      - "3000:3000"
+    restart: always
+
