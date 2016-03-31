@@ -21,4 +21,6 @@ RUN echo "seuf:AlpineLinux" | chpasswd
 
 WORKDIR /usr/share/webapps/wetty
 
-ENTRYPOINT node app.js -p 3000
+EXPOSE 3000
+
+CMD node app.js -p 3000
